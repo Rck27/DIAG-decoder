@@ -1,5 +1,8 @@
+
+.vscode/
 asn1/lte-rrc/
 asn1/nr-rrc/
 asn1/asn-lte-rrc/*.o
 asn1/asn-nr-rrc/*.o
 /*.o
+src/*.o
