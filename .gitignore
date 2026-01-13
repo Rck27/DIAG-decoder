@@ -6,3 +6,5 @@ asn1/asn-lte-rrc/*.o
 asn1/asn-nr-rrc/*.o
 /*.o
 src/*.o
+*.log
+diag.log
