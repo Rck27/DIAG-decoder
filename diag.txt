@@ -1,0 +1,470 @@
+_ZN4aidl6vendor3qti7diaghal14IIdiagcallback4hashE
+_ZGVN4aidl6vendor3qti7diaghal14IIdiagcallback4hashE
+_ZN4aidl6vendor3qti7diaghal6IIdiag4hashE
+_ZGVN4aidl6vendor3qti7diaghal6IIdiag4hashE
+_ZN4aidl6vendor3qti7diaghal7BnIdiag19getInterfaceVersionEPi
+_ZN4aidl6vendor3qti7diaghal7BnIdiag16getInterfaceHashEPNSt3__112basic_stringIcNS4_11char_traitsIcEENS4_9allocatorIcEEEE
+_ZN4aidl6vendor3qti7diaghal7BnIdiag12createBinderEv
+_ZN4aidl6vendor3qti7diaghal7BnIdiagD2Ev
+_ZN4aidl6vendor3qti7diaghal7BnIdiagC2Ev
+_ZN4aidl6vendor3qti7diaghal6IIdiag10descriptorE
+vendor.qti.diaghal-V1-ndk.so
+diag: In %s failed to get Idiag instance
+diag: unable to send log mask to client
+diag: %s: Failure to allocate pkt for msg mask for periph: %s 
+diag: %s: data buf allocation failure
+diag: Invalid read, Close logging for pid: %d, fd %d err: %ld
+diag: usb client 1
+diag: %s: pkt of len: %d to %s %s
+diag: rcvd qrtr bye on dci data chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag: %s: truncated non-HDLC frame
+diag_mhi_uevent_notify
+diag: In %s, Trying to copy ZERO bytes, total_data_len: %d
+diag: %s: Received MHI uevent with MHI_CHANNEL_STATE_4=CONFIGURED state
+/sys/bus/coresight/devices/coresight-modem-diag/enable_source
+diag: unable to update deinit
+diag: In %s Completed sending deinit pkt to client: %d
+diag: unable to send command to dci client
+diag:%s: Feature mask already send to %s 
+diag:%s: String %s found in %s
+diag_set_clear_masks_flags
+diag_peripheral_data_drain_immediate
+diag: %s: Switch logging from (curr_mode: %d mask: %0x) to (new_mode: %d p_mask: %0x) on proc: %d
+diag: %s: Received multistream log pkt
+diag_dci_query_event_mask
+diag:In %s,not a valid peripheral id
+diag: command not supported %d %d %d
+diag: create capacity for pkt rsp
+diag: %s: cmd pkt written to client of fd: %d of len: %d
+diag: %s: invalid client or buff is NULL 
+diag: In %s, re-enabling HDLC encoding
+diag: failed to allocate hdlc destination buffer
+diag_process_vote_realtime
+diag: %s: Not switching modes from curr_mode: %d new_mode: %d on proc: %d
+diag_log_mask_update_hal_client
+failed to bind diag socket
+diag_usb_bridge_enable
+diag: %s: rcvd qrtr del client on ctrl chnl for perif: %s from [0x%x:0x%x]
+diag: Connecting CMD socket to %d: %d perif: %d
+diag: rcvd qrtr new client on data chnl for perif[%s], node: %x, port: %x, svc: %d, ins: %d
+diag: %s: open for perif: %s type: %d
+diag: failed to read from data channel for fd: %d
+diag: dci: Invalid number of log codes %d
+diag_pcie_mhi_uevent_read_cb
+diag: %s: pcie dm registered already
+diag: %s: Read MHI state: 0x%04x from uevent file
+diag: %s: cmd pkt of len: %d to system client of pid: %d
+diag: %s: invalid watermark values, high: %d, low: %d, peripheral: %d
+diag: In %s received feature mask from [%s] mask
+diag: %s: received diag id request ctrl pkt from perif: %s
+diag_switch_logging_proc
+failed to allocate diag command
+diag: %s: failed to set rx buffer size for data channel
+diag: %s: cmd rsp of len %d written to %s (%d)
+Idiag client just died for pid %lu
+diag: %s: cmd rsp from client of fd: %d of len: %d
+diag: Error opening kmsg node, errno: %d, ret: %d
+diag: %s: sent diag id ctrl pkt with id: %d for process: %s
+diag: adding recv for ep0%d %p
+diag: %s: Add USB fd: %d with mux_id: %d to readq
+diag: In %s failed to allocate memory for iovec for fd: %d
+diag: received NULL glinkpkt watch for fd: %d
+diag: %s: failed to create command node for %s
+diag: %s: uevent recvd %s
+diag: In %s, invalid client entry
+diag: DCI realloc failed
+diag: %s: Diag monitor register failed for pcie client
+diag: %s: Failure to write operation on STM node
+diag: %s: pid: %d set override_pid: %d
+diag: In %s Received LSM DEINIT request for client: %d
+diag: In %s Completed LSM DEINIT request for client: %d
+diag: unable to send dci event mask to client
+diag_start_hdlc_recovery
+diag_cntl_send_feature_mask
+truncated diag cntl command
+diag_event_mask_update_client
+diag_cmd_get_build_mask
+diag: add readq fd: %d to aio watches
+diag: In %s, invalid peripheral %d
+diag: In %s senidng data %d entry %p buf %p
+diag: Received with error (%d), closing current socket fd: %d
+diag: %s: Error binding netlink socket, err: %d
+diag: %s: Received MHI uevent with MHI_CHANNEL_STATE_4=DISCONNECTED state
+diag: unable to update msg mask
+diag: unable to update dci log mask
+diag: %s: failed to allocate DM context
+diag: unable to send command to client
+diag: In %s, Invalid number of items in log mask request, equip_id: %d
+diag_cntl_send_msg_mask
+diag: %s: hdlc read buf allocation failure
+diag: %s: Mask clear initiated for session with pid: %d
+diag_close_logging_process
+diag: %s: pid: %d invalid override_pid: %d
+diag: %s invalid buf or invalid offset
+__diag_mhi_open
+diag: Invalid mode %d in %s
+diag: Unable to allocate buffers for peripherals in %s
+diag_process_dci_transaction
+diag: %s: dci client cleanup for pid: %d
+diag_process_apps_dci_read_data
+diag_pcie_mhi_pipe_open
+diag: couldn't allocate pcie read buffer
+diag: %s: Failure to write operation on ATB node
+diag: %s: insufficient buf size: %lld for cmd pkt: %d of size %d
+diag: %s: invalid client or buff is NULL
+<6>diag-router: INFO: %s: diag-router with PID: %d is instantiated
+diag: %s: Sending feature mask to perif %s
+diag_switch_logging
+diag: %s: cmd rsp from client of pid: %d (fd: %d) of len: %d
+diag_cmd_dispatch
+/dev/ffs-diag-1
+diag: %s: added fd: %d to aio watches
+diag: %s: io_cancel failed with ret: %d fd: %d
+diag: wrote packet of %d bytes on fd%d, queueing ZLP
+diag_mux_write
+diag_dci_peripheral_data_drain_immediate
+diag: Could not initialize diag DCI buffers
+diag: %s: Processing request to close mhi pipe
+diag: %s: Query Op for hw_accel_type: %d, hw_accel_ver: %d
+diag: %s: Failed to map shared memory!!
+diag: In %s, Invalid logging mask request, equip_id: %d
+diag: %s: invalid ptr, dropping pkt of len: %zu
+failed to allocate memory for diagmem
+diag: another md instance active for peripheral: %d
+diag_msg_mask_update_hal_client
+failed to listen on diag socket
+diag: %s: unbalanced flow ref count
+diag: rcvd qrtr bye on cmd chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag_glinkpkt_ssr_thread
+diag: Invalid DCI client token, %d
+diag: %s: dci client token mismatch
+hw_accel_diag_pkt_handler
+diag: unable to update timestamp switch value
+diag: failed to allocate hdlc destination buffer
+diag: %s: NHDLC cmd rsp from perif: %s of len: %d
+diag: %s: Received del server notify on cntl ch of periph:%s
+diag:%s invalid frame length : %d
+diag: find equip id = %x at %pK
+diag: invalid buf
+diag: In %s, data buffer is NULL
+diag_update_mhi_channel_state
+diag: %s: Failed to create socket pair %d
+diag: unable to send event mask to client
+diag: unable to send packet to dci client
+diag_timestamp_switch_update_client
+handle_diag_configure_timeout
+diag: sent diag settings ctrl pkt to peripheral %d
+diag: %s: request to switch to invalid mode: %d
+diag: %s: dm with pid: %d and fd: %d is registered, socket_counter: %d
+diag: In %s Enabling HDLC encoding post usb disconnect
+diag: In %s failed to allocate memory
+diag: rcvd qrtr new client on dci data chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag: In %s, invalid, event_id: %d, byte_index: %d
+diag: dci: Invalid length in %s
+diag: In %s, couldn't find client entry, id:%d
+diag_pcie_write
+diag_pcie_open_netlink_socket
+diag: %s: MHI channel state changed from 0x%04x to 0x%04x
+diag: %s: command with invalid operation received: %d
+ diag:In %s Failed to create socket
+diag_cntl_send_masks
+diag: Feature mask not forwarded, failed to send event mask to %s
+diag: %s: Closing md session on pid: %d
+diag: In %s, invalid proc %d for callback registration
+diag: Invalid peripheral: %d
+diag: User PD is already logging onto active peripheral
+diag: In %s, no space to update msg mask, first: %d, last: %d
+diag_cmd_get_ssid_range
+diag: %s failed to accept client socket connection
+diag: %s: data socket [0x%x:0x%x] connected with service [0x%x:0x%x] socket [0x%x:0x%x]
+diag: %s: Glinkpkt_open failed for perif: %d with err: %d, retry_cnt: %d
+diag: In %s, invalid command code %d
+diag: %s: Received empty message, ignoring
+diag: In %s failed to connect to diag socket
+diag:Feature mask not forwarded, failed to send log mask to periph %s 
+diag_map_hw_accel_type_ver
+diag: %s: Received packet count from %d client has reached maximum limit. Resetting count to zero
+diag: Initiate Deinit for pid: %d, fd %d
+diag: %s: failed to clock_gettime
+diag: failed to read from cmd channel for fd: %d
+diag: Incorrect DCI transaction
+diag_pcie_parse_mhi_uevent
+diag: %s: Received MHI uevent with MHI_CHANNEL_STATE_5=CONNECTED state
+diag: %s: operation %hhu and resp is %s
+diag: diag_id support is not present for the pd mask: %d
+diag_md_peripheral_switch
+diag: %s: dci deinit for client_id: %d
+/dev/ffs-diag-2
+diag_ffs_enable
+diag: remove writeq fd: %d from aio watches
+diag: io_submit failed: %d (%d) fd %d
+diag: rcvd qrtr new server on cmd chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag_dci_clear_event_mask
+diag: %s unsupported cmd_code: %d, data_source: %d
+diag_dci_notify_client
+diag: Unable to process single DCI packet, cmd_code: %d, data_source: %d
+diag: %s: Received mhi state is 0x%04x
+diag: Value set to %s: %d
+diag: unable to update event mask
+diag: %s: Failed to allocate receive buffer
+diag: md_session_map[%d] is invalid
+diag: No mask set, skip updating empty masks to peripheral: %s
+diag: %s: Invalid version: %d
+diag: remove fd: %d from aio watches
+diag: removing watch from read watches fd %d err %d
+diag: %s: Received del server notify on data ch of periph:%s
+diag: %s: Received del server on [0x%x:0x%x] for perif:'%s' from service [0x%x:0x%x]
+diag_dci_clear_log_mask
+diag: dci: Invalid number of event ids %d
+diag: In %s buffer is NULL
+diag: Invalid length in %s, len: %d, rsp_len: %d
+diag: In %s, Null buf pointer
+diag_dci_vote_peripheral_buffering_mode
+diag: In %s, invalid packet
+diag: %s: Diag monitor de-registered for pcie client
+diag: DCI support query for periph: %d proc: %d
+diag: unable to send msg mask to client
+diag: %s: pd_mask: %d, diag_id: %d, peripheral: %d,pd_val: %d
+diag: received usb disconnect for proc: %d
+diag: received del server notify for cmd ch of periph:%d
+diag: %s: invalid non-HDLC frame
+diag_mhi_write
+diag: Invalid input in %s
+diag: dci: Invalid length for log type in %s
+diag: Invalid input in %s, buf: %pK, len: %d
+diag: %s: Error setting netlink socket options, err: %d
+diag: %s: Reading MHI state from uevent file
+/sys/bus/coresight/devices/coresight-modem-diag/traceid
+diag: %s: command with invalid type received: %d
+User space application for diag interface
+usage: diag [-hsud]
+diag: %s: Unable to switch mode from %d to %d, err: %d on proc: %d
+diag: While invalid read socket_counter:%d
+diag: setting max_packetsize %d for %d
+diag: In %s invalid iocb
+diag: dci: Invalid event mask pointer in %s
+diag: In %s, invalid input buf: %pK, len: %d, entry: %pK
+diaghal linked to death!! for pid %d
+diag: %s: No dm found for pid %d
+diaghal_thread
+diag: %s: Invalid buf of size: %d
+diag: %s: Failure to allocate pkt for msg mask for periph: %s
+diag: %s: invalid tx mode: %d
+diag: %s: rsp buf allocation failure
+diag: %s: Exiting client (pid: %d) is not an MD client
+diag: invalid curr mode: %d
+diag: %s: received usb enable event for mux id: %d
+diag: remove readq fd: %d from aio watches
+diag_mhi_recv
+diag_dci_deinit_client
+diag: Incoming dci event length: %d is invalid
+diag: In %s: sigqueue failed ret: %d errno: %d
+diag: Invalid length in %s, log_len: %d, len: %d
+diag: %s: pcie dm is closed
+diag: %s: command with invalid hw accel version received: %d
+diag: %s: register as service successful
+diag: %s: client: %s, sub_cmd: %d, sub_id: %d, valid: %d, pid: %d
+diag_process_register_callback
+diag: In %s, invalid peripheral = %d
+diag: %s: fd: %d pid: %d set override_pid: %d
+diag: Update dynamic debug mask: 0x%x
+diag_cmd_set_msg_mask
+diag: %s mux_id: %d fd: %d bulk_out: %d
+diag: %s: invalid channel type: %d to open for peripheral: %s
+diag: dci: Invalid length %d len in %s
+diag: Invalid client %d in %s
+diag: command not supported: %d
+diag: %s: Received MHI uevent with MHI_CHANNEL_STATE_5=DISCONNECTED state
+diag: %s: Invalid response status: %d
+diag: %s: Failed to unmap shared memory!!
+diag: unable to send timestamp switch to client
+diag: failed to copy the msg mask to new md session, err %d
+diag: %s: received dci pkt type 0x%x
+diag: In %s, no space to update log mask, equip_id: %d
+diag_log_mask_update_client
+diag_cmd_get_msg_mask
+diag: Truncating ssid range, %d-%d to max allowed: %d
+diag_dci_register_client
+diag_dci_remove_req_entry
+diag: Invalid delayed rsp packet length %d
+diag: Couldn't open mhi pipe (%s), err: %d
+diag: %s: Diag monitor registered for pcie client
+diag: %s: Failed to send apps resp
+diag: created session in peripheral mode
+diag_clear_masks
+diag: %s: Skipping clearing masks as per user requirement
+diag: DCI support query for periph:%d proc %d
+diag: %s: Event mask for id 0x%x is enabled in legacy
+diag: In %s, Invalid mask
+diag: %s: Sending cmd pkt of len: %d to perif: %s
+diag: usb client 2
+diag: Failed to get FFS bulk_in, init default max pkt size, errno:%d
+diag: %s failed to read eventfd counter
+diag: %s: Binding netlink socket successful
+diag: %s: Received MHI uevent with MHI_CHANNEL_STATE_4=CONNECTED state
+diag: %s: command with invalid cmd version received: %d
+handle_diag_time_sync_switch
+diag_update_real_time_vote
+diag: Empty read, Close logging pid: %d, fd %d 
+diag: Could not initialize diag mask buffers
+/dev/ffs-diag
+diag: %s: cmd rsp from perif: %s of len: %d
+diag: %s: failed to create data socket
+diag: failed to connect to [0x%x:0x%x][0x%x:0x%x]
+diag: received qrtr new client notify for cntl ch periph:%d
+diag: rcvd qrtr bye on ctrl chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag: %s: Connecting data socket to Service[0x%x:0x%x] port[0x%x:0x%x] perif:%s
+diag: Connecting CMD socket to %d:%d
+diag_mux_switch_logging
+diag:In %s,not a valid dci peripheral mask
+diag_process_dci_pkt_rsp
+diag: received dci reg ioctl
+diag: unable to send dci log mask to client
+diag: %s: failed to allocate memory
+diag: failed to copy the event mask to new md session, err %d
+diag_set_peripheral_buffering_mode
+diag: %s: Logging switched to new_mode: %d for p_mask: %0x on proc: %d
+diag: Failed to read from %s, pid: %d
+diag: Not in msg mask range, num_msgs: %d, offset: %d
+diag: Unable to create msg masks, err: %d
+diag_usb_bridge_disable
+diag: failed to read from cntl channel for fd: %d
+diag_glinkpkt_open_thread
+diag: event > %d, payload_len = %d, temp_len = %d
+diag: %s: Packet of len: %d written to pcie
+diag: %s: Received MHI uevent with MHI_CHANNEL_STATE_5=CONFIGURED state
+diaghal: %s callback invalid!
+linking diaghal to death failed: %d: %s
+diag: unable to update dci event mask
+diag: In %s successfully connected to socket %d
+diag: Feature mask not forwarded, failed to send msg mask for periph %s
+diag_config_perif_buf
+diag: recvd request to %s with HW Accel type: %d, ver: %d for diagid mask: %d
+diag: failed to copy the log mask to new md session, err %d
+diag: %s: set clear mask state: %d
+diag: received qrtr bye for cntl ch periph:%d
+diag: %s: failed to create control node for %s
+diag: dci: Invalid length for event type in %s
+diag: Error uevent datagram is truncated %ld
+diag: %s: Invalid command length to parse the request
+diag: %s: sending multisim masks to peripheral: %s for sub_id: %d
+diag: %s: Config request for buffering mode: %d peripheral:%d diag id:%d periph id:%d
+diag: In %s, invalid index %d
+diag_send_real_time
+diag:%s: Feature mask already received from %s
+diag: Update dynamic debug pid: %d
+diag_usb_disconnect
+diag: Unable to create glinkpkt ssr thread for %s
+diag_dci_query_log_mask
+diag: dci: Invalid Log mask pointer in %s
+diag: Invalid length in %s, len: %d, read: %d
+diag_dci_process_peripheral_data
+diag_process_single_dci_pkt
+diag: %s: Error creating uevent netlink socket, err: %d
+diag: Error opening MHI uevent file, error: %d
+diag: %s: mhi uevent file is empty
+diag: In %s, cannot send real time mode pkt since one of the periperhal is in buffering mode
+diag: Truncating ssid range for ssid_first: %d ssid_last %d
+diag: adding usb client
+diag_ffs_recv
+diag: %s received NULL or 0 entries for IOVEC for fd: %d
+diag: %s: Received del server on [0x%x:0x%x] for perif: %s from service [0x%x:0x%x]
+diag: rcvd qrtr new server on dci cmd chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag: rcvd dci new server notify
+diag: %s: non-HDLC frame is not truncated
+diag: Unable to create glinkpkt open thread
+diag: Integer overflow in %s, log_len: %d
+diag: registering new DCI transaction failed
+diag: Couldn't create netlink socket. Terminating Monitor Thread
+diag_pcie_mhi_check_uevent_mhi_state
+diag: unable to send dci buffering mode status to client
+diag: In %s, length is less returning, equip_id: %d 0x%lx exp =  0x%lx 
+diag: %s: Skip sending pkt of len(%zu) to cntl chnl
+diag: asking for mode switch with no peripheral mask set
+diag: In %s, peripheral %d doesn't support buffering
+diag: %s: Failure in diag_md_session_check with err: %d
+diag: While empty read socket counter:%d
+diag: %s: Diag-router handling cmd pkt of len: %d
+diag: received usb connect for proc: %d
+diag: %s: Sending cmd pkt of len: %zu to perif: %s with port: node [%x: %x]
+diag: %s: failed to create command socket
+diag: SSR underway for peripheral: %s of channel type: %d
+diag: %s: failed to create data node for %s
+diag: did not find equip id = %x at %d
+diag: Error receiving uevent msg: %d. Ignoring msg
+diag: In %s, invalid tx mode: %d
+diag_cntl_process_diag_id
+diag_send_all_mask_clear
+diag: Cleared up session for pid: %d
+diag_msg_mask_update_client
+diag: %s received err: %lld for fd: %d
+diag: rcvd qrtr bye on dci cmd chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag: %s invalid channel type for peripheral: %s
+diag: dci equip id not found
+diag: In %s invalid dci client entry
+diag: unable to update log mask
+diag: %s: sending msg mask with status %d 
+diag_cntl_config_wm_values
+diag: %s: Sending masks to peripheral (%d) not supporting diagid
+%s: failed to allocate buf for pd:%d diag_id:%d
+diag: Failed to allocate memory for stm ctrl pkt
+diag: query with no pd mask set, returning error
+diag: Another MD Session owns a requested peripheral
+diag: %s use iovec for fd: %d
+diag_fwd_data
+diag: %s: Connecting cntl socket with Service[0x%x:0x%x] port[0x%x:0x%x] perif:%s
+diag: %s: CNTL socket [0x%x:0x%x] connected with service [0x%x:0x%x] socket [0x%x:0x%x]
+diag: rcvd qrtr new client on ctrl chnl for perif: %d, node: %x, port: %x, svc: %d, ins: %d
+diag: %s: rcvd qrtr del client on data chnl for perif[%s] from [0x%x:0x%x]
+diag: rcvd qrtr bye on data chnl for perif[%s] node: %x, port: %x, svc: %d, ins: %d
+diag: In %s, invalid client
+diag: Invalid pointer in %s
+diag: Registering DCI cmd req, client_id: %d, uid: %d, tag:%d
+diag: No matching client for DCI data
+diag: %s: register as service failed
+diag: %s: Sent legacy mask to periph: %s, len: %d
+diag: did not update real time mode on proc %d, already in the req mode %d
+diag: failed to allocate memory while forwarding diag settings
+diag: asking for mode switch with no device mask set
+diag: In %s, pd buffering not supported for peripheral:%d
+diag: Could not initialize diag mask for subid: %d buffers
+diag: %s: failed to select with error: %d
+diag: %s: failed to create control socket
+diag_copy_dci
+diag_pcie_mhi_pipe_close
+diag_pcie_close
+diag: %s: Failure in hw accelartion operation, err: %d, errno: %d
+diag: unable to send packet to client
+diag: diag_id support is not present for the pd mask = %d
+diag: %s, invalid params, proc: %d, vote: %d, client_id: %d
+diag_configure_pd_logging
+diag: %s: Switched logging for p_mask: 0x%x to mode: %d
+diag: %s: cmd rsp (NHDLC) from client of pid: %d (fd: %d) of len: %d
+diag: In %s failed to alloc memory
+diag: %s: Sending cmd pkt of len: %d to client fd: %d
+diag: %s failed to set O_NONBLOCK
+diag: %s: failed to get socket option: %d
+diag: In %s invalid len: %d
+diag: Invalid length in %s, len: %d, temp_len: %d
+diag: dci: Event type, invalid byte index
+diag: %s: Sending cntl pkt of len: %zu to perif: %s with port: node [%x: %x]
+diag_notify_md_client
+diag: %s: Sent multisim mask to periph: %s, len: %d
+diag_cntl_feature_mask
+diag: Reached maximum number of subid supported: %d
+diag: Unable to create msg build time masks, err: %d
+diag: %s: dm is not valid socket_counter: %d
+diag: %s: received usb disable/unbind event(%d) for mux id :%d
+diag: %s: data pkt from perif: %s of len: %d
+diag: %s: failed to create dci command socket
+diag: Invalid length in %s, len: %d, dci_pkt_len: %d
+diag: Error in reading MHI state from MHI uevent file, error: %d
+diag
+/dev/ffs-diag-1
+/dev/ffs-diag-1
+/dev/ffs-diag-1
+/dev/ffs-diag-2
+/dev/ffs-diag-2
+/dev/ffs-diag-2
+/dev/ffs-diag-2
+/dev/ffs-diag-2
