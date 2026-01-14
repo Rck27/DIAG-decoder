@@ -14,6 +14,7 @@
 
 /* --- Constants --- */
 #define LOG_TYPE_OFFSET 26
+#define ASN1_START_OFFSET 49
 
 static const uint8_t kFrameStart[4] = {0x20, 0x00, 0x00, 0x00};
 static const uint8_t kFrameEnd = 0x7e;
@@ -101,7 +102,7 @@ static void decode_diag(const uint8_t *buf, size_t len)
         );
 
         if (rval.code == RC_OK &&
-            rval.consumed > 10 &&
+            rval.consumed > 0 &&
             rval.consumed <= (long)(len * 8)) {
 
             printf("Matched root type: %s\n",
@@ -145,10 +146,12 @@ static void bb_free(ByteBuffer *bb) {
     bb_init(bb);
 }
 
-#define RRC_OTA_SUBHDR_LEN 18   /* observed Qualcomm subheader */
-#define CRC_LEN 2
+
 
 static int process_payload(const uint8_t *p, size_t len){
+
+    uint32_t outer_len = p[8] | (p[9] << 8) | (p[10] << 16) | (p[11] << 24);
+
     uint16_t plen1 = p[22] | (p[23] << 8);
     uint16_t plen2 = p[24] | (p[25] << 8);
 
@@ -158,61 +161,37 @@ static int process_payload(const uint8_t *p, size_t len){
         fprintf(stderr, "bad plen: %u vs %u\n", plen1, plen2);
         return -1;
     }
-    size_t plen = (size_t)plen1;
+ 
 
-    /* compute header length as total_len - payload_len if you're passing full frame len */
-    if (len < plen) {
-        /* definitely incomplete */
-        return 0;
-    }
-    size_t hdr_len = len - plen; /* in your logs this was 27 or 28 */
+    size_t asn_start = 28 + 21;
+    size_t asn_len = plen1 - 21;
 
-    /* sanity checks */
-    if (hdr_len + RRC_OTA_SUBHDR_LEN + CRC_LEN > len) {
-        fprintf(stderr, "not enough data for subheader+crc: hdr=%zu plen=%zu len=%zu\n",
-                hdr_len, plen, len);
-        return 0; /* wait for more */
-    }
-
-    /* ASN start & length */
-    size_t asn_start = hdr_len + RRC_OTA_SUBHDR_LEN;
-    if (asn_start >= len) return -1;
-
-    /* asn_len_raw = bytes from asn_start up to before delimiter (or up to hdr+plen) */
-    size_t asn_len_raw = hdr_len + plen - asn_start; /* = plen - RRC_OTA_SUBHDR_LEN */
-    if (asn_len_raw <= CRC_LEN) {
-        fprintf(stderr, "asn payload too small: %zu\n", asn_len_raw);
-        return -1;
-    }
-
-    size_t asn_len = asn_len_raw - CRC_LEN; /* strip CRC bytes */
-
-    /* final bounds check */
-    if (asn_start + asn_len > len) {
-        fprintf(stderr, "bounds problem asn_start+asn_len > len\n");
-        return 0;
-    }
-
-    /* Optionally, verify terminator 0x7e exists at hdr_len + plen - maybe hdr_len+plen == index_of_0x7e+1 */
-    size_t expected_terminator_index = hdr_len + plen - 1; /* if payload includes terminator at last byte */
-    if (expected_terminator_index < len && p[expected_terminator_index] != 0x7e) {
-        /* tolerant: search a little forward/backward for 0x7e if needed (not shown) */
-        /* But don't fail hard here — many frames show small variance/padding */
-    }
-
-    /* copy payload to a new buffer that you give to ASN decoder */
-    uint8_t *asn_buf = malloc(asn_len);
+    uint8_t *asn_buf = malloc(asn_len + 1);
     if (!asn_buf) { perror("malloc"); return -1; }
     memcpy(asn_buf, p + asn_start, asn_len);
 
+    uint16_t log_type = p[26] | (p[27] << 8);
+
+
     /* debug dump */
-    fprintf(stderr, "hdr=%zu plen=%zu asn_start=%zu asn_len=%zu crc_last= %02x %02x term=%02x\n",
-            hdr_len, plen, asn_start, asn_len,
-            p[asn_start + asn_len],      /* first CRC byte */
-            p[asn_start + asn_len + 1],  /* second CRC byte */
-            p[expected_terminator_index]);
-    
+    fprintf(stderr, "len: %zu, log_type: %04x,inner_len: %u asn_len: %zu delimit: %02x\n", len, log_type, plen1, asn_len, p[len-1]);
+
+    for(int i = 0; i < len; i++){
+        if(i == 49 || i == 26 || i == 22){
+            printf("|%02x| ", p[i]);
+        }
+        printf("%02x ", p[i]);
+    }
+    printf("\n Stripped:");
+    for(int i = 49; i < len -3; i++){
+        printf("%02x ", p[i]);
+    }
+    printf("\n");
+
+
     decode_diag(asn_buf, asn_len);
+
+
     // uint16_t plen = (plen1 == plen2) ? plen1 : 0;
 //     if(plen<1) return;
 //     printf("size: %zu, plen %d, hdr %zu \n", len, plen, len-plen);
